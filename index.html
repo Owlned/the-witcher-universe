@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> The Witcher Universe </title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="imgs/favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap" rel="stylesheet">
+
+	<script src="./scripts/navbarTransform.js"></script>
+
+</head>
+
+<body>
+	<!-- navbar -->
+	<header>
+		<div class="navigation-bar">
+			<nav>
+				<img src="imgs/navbar-logo.png" alt="logo" id="logo">
+
+				<ul>
+					<li class="active"><a href="index.html"> home </a></li>
+					<li><a href="world.html"> world </a></li>
+					<li><a href="about.html"> about </a></li>
+				</ul>
+
+				<div class="dropdown">
+					<div class="dropdown-btn" onclick="transformButton(this); showHideContent()">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+
+					<div class="dropdown-content">
+						<a href="index.html"> home </a>
+						<a href="world.html"> world </a>
+						<a href="about.html"> about </a>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+	</header>
+
+	<!-- main -->
+	<div id="main" onmousewheel="scrollFunction()">
+
+		<!-- title -->
+		<p id="homepage-title">The Witcher Universe</p>
+		<h1 id="secondary-title">A fan made webpage for everything witcher related</h1>
+		<hr>
+
+		<!-- landscapes slideshow -->
+		<div id="world-slideshow">
+			<p class="section-titles">Explore the world</p>
+			<div id="world-images-container">
+				<div class="world-img-div">
+					<img src="imgs/landscapes/kaermorhen4k.png" alt="kaer morhen" class="world-img">
+				</div>
+				<div class="world-img-div">
+					<img src="imgs/landscapes/kaermorhen.jpg" alt="kaer morhen" class="world-img">
+				</div>
+				<div class="world-img-div">
+					<img src="imgs/landscapes/snowyhuts.jpg" alt="snowy village" class="world-img">
+				</div>
+				<div class="world-img-div">
+					<img src="imgs/landscapes/velenbog.jpg" alt="swamp" class="world-img">
+				</div>
+				<div class="world-img-div">
+					<img src="imgs/landscapes/sunset.jpg" alt="sunset" class="world-img">
+				</div>
+				<div class="world-img-div">
+					<img src="imgs/landscapes/forest.jpg" alt="forest" class="world-img">
+				</div>
+				<div class="world-img-div">
+					<img src="imgs/landscapes/toussaint.jpg" alt="toussaint" class="world-img">
+				</div>
+				<div class="world-img-div">
+					<img src="imgs/landscapes/velenfield.jpg" alt="velen field" class="world-img">
+				</div>
+
+			</div>
+		</div>
+
+		<hr id="line-between-characters-and-world">
+
+		<!-- --------------------------------CHARACTERS-------------------------------- -->
+		<!-- characters scrollable -->
+		<div id="characters">
+			<p class="section-titles">Meet the characters</p>
+			<div id="characters-scrollable">
+				<div class="slider-chars">
+					<div class="section-paragraph character-text">
+						<p class="mini-title">Geralt of Rivia</p>
+						<p>
+							Geralt of Rivia is the protagonist of the series and its adaptations.
+							Shortly after being born, Geralt was forced to undergo training and,
+							eventually, become a witcher at Kaer Morhen — the stronghold of the Wolf School Witchers.
+							Because of his pale skin and white hair, he is also known in the Elder Speech as
+							"Gwynbleidd", the White Wolf.
+						</p>
+					</div>
+					<div class="float-right-img">
+						<img src="imgs/characters/geralt.jpg" alt="geralt" class="character-img">
+						<div class="overlay"></div>
+						<div class="info">
+							<p class="text"><a id="more-info-geralt" class="more-info-characters"
+									href="javascript:void(0)">More Info</a></p>
+						</div>
+					</div>
+
+				</div>
+				<div class="slider-chars">
+					<div class="section-paragraph character-text">
+						<p class="mini-title">Yennefer of Vengerberg</p>
+						<p>
+							Yennefer of Vengerberg, born on Belleteyn in 1173, was a sorceress who lived in Vengerberg,
+							the capital city of Aedirn. She was Geralt of Rivia's true love and a mother figure to Ciri,
+							whom she viewed like a daughter to the point that she did everything she could to rescue the
+							girl and keep her from harm.
+						</p>
+					</div>
+					<div class="float-right-img">
+						<img src="imgs/characters/yennefer.jpg" alt="yennefer" class="character-img">
+						<div class="overlay"></div>
+						<div class="info">
+							<p class="text"><a id="more-info-yen" class="more-info-characters"
+									href="javascript:void(0)">More Info</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="slider-chars">
+					<div class="section-paragraph character-text">
+						<p class="mini-title">Cirilla Fiona Elen Riannon</p>
+						<p>
+							Cirilla Fiona Elen Riannon better known as Ciri, was born in 1253,
+							and most likely during the Belleteyn holiday. She was the sole princess
+							of Cintra, the daughter of Pavetta and Emhyr var Emreis as well as Queen Calanthe's
+							granddaughter. She is the adoptive daughter of Geralt and Yennefer.
+						</p>
+					</div>
+					<div class="float-right-img">
+						<img src="imgs/characters/ciri.jpg" alt="ciri" class="character-img">
+						<div class="overlay"></div>
+						<div class="info">
+							<p class="text"><a id="more-info-ciri" class="more-info-characters"
+									href="javascript:void(0)">More Info</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="slider-chars">
+					<div class="section-paragraph character-text">
+						<p class="mini-title">Dandelion</p>
+						<p>
+							Julian Alfred Pankratz better known as Dandelion, was a poet, minstrel, bard, and close
+							friend of Geralt of Rivia. In his ballads and stories he tended to vastly exaggerate the
+							adventures
+							he had with Geralt and would sometimes even become the hero, who had to save Geralt's life,
+							a
+							stark contrast to reality.
+
+						</p>
+					</div>
+					<div class="float-right-img">
+						<img src="imgs/characters/dandelion.png" alt="dandelion" class="character-img">
+						<div class="overlay"></div>
+						<div class="info">
+							<p class="text"><a id="more-info-dandelion" class="more-info-characters"
+									href="javascript:void(0)">More Info</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="slider-chars">
+					<div class="section-paragraph character-text">
+						<p class="mini-title">Triss Merigold</p>
+						<p>
+							Triss Merigold of Maribor was a legendary Temerian sorceress of the 13th century. Called
+							Fourteenth of the Hill by her contemporaries because she was erroneously thought to have
+							been killed during the Battle of Sodden Hill, she passed into history as Merigold the
+							Fearless.
+						</p>
+					</div>
+					<div class="float-right-img">
+						<img src="imgs/characters/triss.jpg" alt="triss" class="character-img">
+						<div class="overlay"></div>
+						<div class="info">
+							<p class="text"><a id="more-info-triss" class="more-info-characters"
+									href="javascript:void(0)">More Info</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button id="slide-left-chars" class="button-left" type="button"><i class="arrow left"></i></button>
+			<button id="slide-right-chars" class="button-right" type="button"><i class="arrow right"></i></button>
+
+		</div>
+
+		<!-- geralt card -->
+		<div id="geralt-card" class="more-info-div-chars hidden visuallyhidden">
+			<div class="more-info-card" id="geralt">
+				<img src="./imgs/characters/geralt.jpg" alt="geralt">
+				<div class="card-text-chars">
+					<p class="mini-title card-title-chars">Geralt of Rivia</p>
+
+					<p class="section-paragraph card-text-alignments">Geralt of Rivia was a legendary witcher of the
+						School of the Wolf active throughout the 13th century. He loved the sorceress Yennefer,
+						considered the love of his life despite their tumultuous relationship, and became Ciri's
+						adoptive father.
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						During the Trial of the Grasses, Geralt exhibited unusual tolerance for the mutagens that grant
+						witchers their abilities. Accordingly, Geralt was subjected to further experimental mutagens
+						which rendered his hair white and may have given him greater speed, strength, and stamina than
+						his fellow witchers.
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						Despite his title, Geralt did not hail from the city of Rivia. After being left with the
+						witchers by his mother, Visenna, he grew up in their keep of Kaer Morhen in the realm of
+						Kaedwen. In the interest of appearing more trustworthy to potential clients, young witchers were
+						encouraged to make up surnames for themselves by master Vesemir. As his first choice, Geralt
+						chose "Geralt Roger Eric du Haute-Bellegarde", but this choice was dismissed by Vesemir as silly
+						and pretentious, so "Geralt" was all that remained of his chosen name. "Of Rivia" was a more
+						practical alternative and Geralt even went so far as to adopt a Rivian accent to appear more
+						authentic. Later, Queen Meve of Lyria knighted him for his valor in the Battle for the Bridge on
+						the Yaruga conferring on him the formal title "of Rivia", which amused him. He, therefore,
+						became a true knight.
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						&quot;...if I'm to choose between one evil and another, then I prefer not to choose at
+						all.&quot; - Geralt of Rivia
+					</p>
+
+				</div>
+
+				<button id="geralt" class="circle-close-char" onclick="closeInfoForChar()">&times;</button>
+
+			</div>
+
+		</div>
+		<!-- yen card -->
+		<div id="yen-card" class="more-info-div-chars hidden visuallyhidden">
+			<div class="more-info-card" id="yen">
+				<img src="./imgs/characters/yennefer.jpg" alt="yennefer">
+				<div class="card-text-chars">
+					<p class="mini-title card-title-chars">Yennefer of Vengerberg</p>
+
+					<p class="section-paragraph card-text-alignments">
+						Yennefer of Vengerberg, born on Belleteyn in 1173, was a sorceress who lived in Vengerberg, the
+						capital city of Aedirn. She was Geralt of Rivia's true love and a mother figure to Ciri, whom
+						she viewed like a daughter to the point that she did everything she could to rescue the girl and
+						keep her from harm.
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						The lady of Vengerberg was famous for her beauty, even though she was nearly a century old.
+						Yennefer had locks of curly, raven black hair fragrant with lilac and gooseberry perfume,
+						falling in a cascade of curls on her shapely shoulders. Her face was very pale, triangular in
+						shape with a slightly receded chin. Her eyes were cold and sparkling with a remarkable violet
+						penetrating gaze, in anger blazing with livid, blue-gray fire. Those very eyes also concealed
+						wisdom and imperiousness. Yennefer's nose was slightly long, mouth was pale with thin and
+						slightly crooked, soft, sweet with lipstick, proud lips. On her long and slender neck hung a
+						black marigold with a star made of obsidian sparkling with a multitude of tiny diamonds embedded
+						in it.
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						Yennefer had pronounced cheekbones, natural, slightly irregular eyebrows trimmed by hand and
+						emphasized with charcoal, long eyelashes, and petite hands. Even in high-heeled shoes she wasn't
+						tall, was beautiful but threatening, having incredibly thin and slender waist and slender legs.
+
+						She always dressed in black and white, at times wore stockings, wore frilled panties but never
+						wore trivialities with underwire, she didn't need to. Her voice was resonant and mildly
+						derisive. Her overall feminine shape was one of a twenty-year-old girl and she moved with a
+						natural, unforced grace. She was a quarter-elf (meaning she had a quarter elven blood, in her
+						case on her mother's side).
+					</p>
+
+				</div>
+
+				<button id="yen" class="circle-close-char" onclick="closeInfoForChar()">&times;</button>
+
+			</div>
+
+		</div>
+		<!-- ciri card -->
+		<div id="ciri-card" class="more-info-div-chars hidden visuallyhidden">
+			<div class="more-info-card" id="ciri">
+				<img src="./imgs/characters/ciri.jpg" alt="ciri">
+				<div class="card-text-chars">
+					<p class="mini-title card-title-chars">Cirilla Fiona Elen Riannon</p>
+
+					<p class="section-paragraph card-text-alignments">
+						Ciri was born in Skellige in Belleteyn of the following year and initially, Calanthe ordered
+						her advisor Mousesack to kill Geralt, wishing to break free from the Law of Surprise.
+						Mousesack was ready to go, as nobody simply refused the queen, but when he was summoned a short
+						time later Calanthe retracted the order without explanation.
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						Growing up, not much is known about Ciri's relationship with her parents, though it appeared
+						Pavetta adored her daughter, with others remarking how it was rare for her to be parted from
+						Ciri. However, this didn't stop Pavetta from secretly sending Ciri ashore just as the small
+						family was set to sail out from Skellige to Cintra, against Calanthe's wishes, who wished for
+						them all to stay. Shortly after, Pavetta and Duny died at sea around the Sedna Abyss, making
+						Ciri an orphan before she was 5 years old.
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						With the death of her mother, Ciri was now the only remaining heir to Cintra and thus Calanthe
+						took special care to raise her granddaughter. Despite Calanthe's attempts to keep Ciri shielded
+						from learning about being a Child of Surprise and that she was destined to be a witcher since
+						birth, Ciri's nanny told the young girl all about a white-haired witcher, and that he'd one day
+						come for her to be taken away to be trained as one as well.
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						&quot;Hatred and vengeance blinded me ... But I shall stand before them in humility. I shall
+						remember the expression in their eyes. I hope the memory of those eyes will stop me making a
+						similar mistake.&quot; - Ciri
+					</p>
+
+				</div>
+
+				<button id="ciri" class="circle-close-char" onclick="closeInfoForChar()">&times;</button>
+
+			</div>
+
+		</div>
+		<!-- dandelion card -->
+		<div id="dandelion-card" class="more-info-div-chars hidden visuallyhidden">
+			<div class="more-info-card" id="dandelion">
+				<img src="./imgs/characters/dandelion.png" alt="dandelion">
+				<div class="card-text-chars">
+					<p class="mini-title card-title-chars">Julian Alfred Pankratz (Dandelion)</p>
+
+					<p class="section-paragraph card-text-alignments">
+						Not much is known about Dandelion's family except that he was of noble birth and was a cousin of
+						Ferrant de Lettenhove, the royal instigator of Kerack.
+
+						He received his early education in a temple school, where, according to Geralt, literacy was
+						"beaten into him with a cane". However, he didn't truly get into poetry until he was 19, after
+						being inspired by his love for Countess de Stael.
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						Dandelion studied the seven liberal arts for four years at Oxenfurt University before later
+						becoming a professor, but only taught students for a year before leaving the academy to travel
+						the world. He would, however, visit Oxenfurt from time to time to give guest lectures.
+
+						Within a very few years he gained worldwide fame and became known as one of the best minstrels
+						in the Northern Kingdoms, with his best known song was the Ballad of the Lion Cub of Cintra.
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						Dandelion first met Geralt at a fête in the town of Gulet in Aedirn. There, the poet had knocked
+						up a girl under the musician's podium, and her four sturdy brothers were looking for him all
+						over town, threatening to geld him and cover him in pitch and sawdust.
+
+						The so called Valley of Flowers seemed just right the right location for the duo's swift escape,
+						as it was supposed to be the edge of the inhabited world, the last outpost of civilization. It
+						was in the small town of Upper Posada, located in a part of the Northern Realms that later
+						became Dol Blathanna, that the pair had their first adventure together, involving a nasty Sylvan
+						and an encounter with Dol Blathanna's native inhabitants, the Elves. During this adventure,
+						Dandelion received his priceless lute from Toruviel.
+					</p>
+
+				</div>
+
+				<button id="dandelion" class="circle-close-char" onclick="closeInfoForChar()">&times;</button>
+
+			</div>
+
+		</div>
+		<!-- triss card -->
+		<div id="triss-card" class="more-info-div-chars hidden visuallyhidden">
+			<div class="more-info-card" id="triss">
+				<img src="./imgs/characters/triss.jpg" alt="triss">
+				<div class="card-text-chars">
+					<p class="mini-title card-title-chars">Triss Merigold of Maribor</p>
+
+					<p class="section-paragraph card-text-alignments">
+						She was friends with Yennefer and the witcher Geralt of Rivia, but also unhappily in love with
+						the latter. Triss took care of Ciri at Kaer Morhen for some time and is like an older sister
+						to her. It was through her intervention that Ciri was not subjected to harmful hormone changes
+						at Kaer Morhen, stripping her of her secondary gender traits.
+
+						She was a skilled healer and carried with her many magical potions, but she never uses them on
+						herself because ironically, she was allergic to potions. She was also quite a powerful mage,
+						certainly when it counted most. She wore an amulet - sapphire overlaid with silver.
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						Not much is known about Triss' upbringing. Not even a precise time of her birth, which is a
+						subject to some degree of confusion - see below. What is known is the fact, that she was born
+						and lived as a child in Maribor. Sometime during her childhood, she had a conduit moment and was
+						noticed by sorcerers. Thus, she found her way to Aretuza. Here, she became a sorceress on her
+						own, specializing in making of magical potions, mainly healing ones. This was rather amusing
+						twist of fate as she herself was allergic to magical potions and could only tolerate non magical
+						ones.
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						Some time later, Triss found out about her friend's on and off relations with Geralt of Rivia.
+						Curious about the nature of that relationship, she used a magic and seduced the witcher,
+						resulting in them spending time together in Kaer Morhen as lovers. During those time, Triss
+						became very good friend with some of the other witchers, Vesemir and Eskel. Since then, she was
+						always welcome in the
+						witcher's keep.
+
+						After some time however, the spell faded and Geralt simply ended the relationship. This proved
+						to be a very difficult for Triss as she fell in deep love with Geralt. Despite that, the two of
+						them remained very good friends in years to come and even though Triss was still unhappily in
+						love with him, he did not wish to start anew.
+					</p>
+
+				</div>
+
+				<button id="triss" class="circle-close-char" onclick="closeInfoForChar()">&times;</button>
+
+			</div>
+
+		</div>
+
+		<hr>
+
+		<!-- --------------------------------BOOKS-------------------------------- -->
+
+		<!-- books scrollable -->
+		<div id="books">
+			<p class="section-titles">Read the books</p>
+			<div id="book-images-div">
+				<div id="horizontal-scroll-books">
+					<!-- book 1 -->
+					<div class="slider-books">
+						<img src="imgs/books/last-wish.jpg" alt="book1" class="book-cover">
+						<div class="overlay"></div>
+						<div class="info">
+							<p class="text"><a id="more-info-book1" class="more-info-text"
+									href="javascript:void(0)">More Info</a></p>
+						</div>
+					</div>
+					<!-- book 2 -->
+					<div class="slider-books">
+						<img src="imgs/books/sword-of-destiny.jpg" alt="book2" class="book-cover">
+						<div class="overlay"></div>
+						<div class="info">
+							<p class="text"><a id="more-info-book2" class="more-info-text"
+									href="javascript:void(0)">More Info</a></p>
+
+						</div>
+					</div>
+					<!-- book 3 -->
+					<div class="slider-books">
+						<img src="imgs/books/blood-of-elves.jpg" alt="book3" class="book-cover">
+						<div class="overlay"></div>
+						<div class="info">
+							<p class="text"><a id="more-info-book3" class="more-info-text"
+									href="javascript:void(0)">More Info</a></p>
+						</div>
+					</div>
+					<!-- book 4 -->
+					<div class="slider-books">
+						<img src="imgs/books/time-contempt.jpg" alt="book4" class="book-cover">
+						<div class="overlay"></div>
+						<div class="info">
+							<p class="text"><a id="more-info-book4" class="more-info-text"
+									href="javascript:void(0)">More Info</a></p>
+						</div>
+					</div>
+					<!-- book 5 -->
+					<div class="slider-books">
+						<img src="imgs/books/baptism-fire.jpg" alt="book5" class="book-cover">
+						<div class="overlay"></div>
+						<div class="info">
+							<p class="text"><a id="more-info-book5" class="more-info-text"
+									href="javascript:void(0)">More Info</a></p>
+						</div>
+					</div>
+					<!-- book 6  -->
+					<div class="slider-books">
+						<img src="imgs/books/tower-swallow.jpg" alt="book6" class="book-cover">
+						<div class="overlay"></div>
+						<div class="info">
+							<p class="text"><a id="more-info-book6" class="more-info-text"
+									href="javascript:void(0)">More Info</a></p>
+						</div>
+					</div>
+					<!-- book 7 -->
+					<div class="slider-books">
+						<img src="imgs/books/lady-of-lake.jpg" alt="book7" class="book-cover">
+						<div class="overlay"></div>
+						<div class="info">
+							<p class="text"><a id="more-info-book7" class="more-info-text"
+									href="javascript:void(0)">More Info</a></p>
+						</div>
+					</div>
+					<!-- book 8  -->
+					<div class="slider-books">
+						<img src="imgs/books/season-storms.jpg" alt="standalone-book" class="book-cover">
+						<div class="overlay"></div>
+						<div class="info">
+							<p class="text"><a id="more-info-book8" class="more-info-text"
+									href="javascript:void(0)">More Info</a></p>
+						</div>
+					</div>
+				</div>
+				<button id="slide-left-books" class="button-left" type="button"><i class="arrow left"></i></button>
+				<button id="slide-right-books" class="button-right" type="button"><i class="arrow right"></i></button>
+				<div id="books-text" class="section-paragraph">
+					<p class="mini-title">You don't know what you're missing!</p>
+					<p> The Witcher by Andrzej Sapkowski is a series of fantasy short stories
+						and five novels about the witcher Geralt of Rivia.
+						The books have been adapted into a movie and two television series,
+						a video game series, a comic book and others.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- book one card -->
+		<div id="book-one-card" class="more-info-div hidden visuallyhidden">
+			<div class="more-info-card" id="book-1">
+				<img src="./imgs/books/last-wish.jpg" alt="first-book">
+				<div class="card-text">
+					<p class="mini-title card-title">The Witcher: The Last Wish</p>
+
+					<p class="section-paragraph card-text-alignments">Releases: <br>
+						Original - 1993;<br>
+						English - 2007; <br>
+						Bulgarian - 2008;<br>
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						The anthology employs the story within a story framework and contains seven main short stories.
+						Geralt, after having been injured in battle, rests in a temple of Melitele in Ellander.
+						During that time he has flashbacks to recent events in his life — each of which forms a story of
+						its own:
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						1. The Voice of Reason (Głos rozsądku, framing story)<br>
+						2. The Witcher (Wiedźmin)<br>
+						3. A Grain of Truth (Ziarno prawdy)<br>
+						4. The Lesser Evil (Mniejsze zło)<br>
+						5. A Question of Price (Kwestia ceny)<br>
+						6. The Edge of the World (Kraniec świata)<br>
+						7. The Last Wish (Ostatnie życzenie)<br>
+					</p>
+
+				</div>
+
+				<button id="last-wish" class="circle-close" onclick="closeInfoForBook()">&times;</button>
+
+			</div>
+
+		</div>
+		<!-- book two card -->
+		<div id="book-two-card" class="more-info-div hidden visuallyhidden">
+			<div class="more-info-card" id="book-2">
+				<img src="./imgs/books/sword-of-destiny.jpg" alt="second-book">
+				<div class="card-text">
+					<p class="mini-title card-title">The Witcher: Sword of Destiny</p>
+
+					<p class="section-paragraph card-text-alignments">Releases: <br>
+						Original - 1992;<br>
+						English - 2015; <br>
+						Bulgarian - 2008;<br>
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						Sword of Destiny (Polish: Miecz przeznaczenia) is the second book in Andrzej Sapkowski's The
+						Witcher series in terms of story chronology, although the original Polish edition was published
+						in 1992, before The Last Wish (but after the Wiedźmin short story collection made obsolete by
+						The Last Wish). Some of the individual short stories were first published in the Fantastyka
+						magazine. Stories include:<br>
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						1. The Bounds of Reason (Granica możliwości)<br>
+						2. A Shard of Ice (Okruch lodu)<br>
+						3. Eternal Flame (Wieczny ogień)<br>
+						4. A Little Sacrifice (Trochę poświęcenia)<br>
+						5. The Sword of Destiny (Miecz przeznaczenia)<br>
+						6. Something More (Coś więcej)<br>
+					</p>
+
+				</div>
+
+				<button id="sword-of-destiny" class="circle-close">&times;</button>
+
+			</div>
+
+		</div>
+		<!-- book three card -->
+		<div id="book-three-card" class="more-info-div hidden visuallyhidden">
+			<div class="more-info-card" id="book-3">
+				<img src="./imgs/books/blood-of-elves.jpg" alt="third-book">
+				<div class="card-text">
+					<p class="mini-title card-title">The Witcher: Blood of Elves</p>
+
+					<p class="section-paragraph card-text-alignments">Releases: Original - 1994; English - 2008;
+						Bulgarian - 2009;<br>
+						<br>
+						Blood of Elves is the first novel in the Witcher saga written by Andrzej
+						Sapkowski. It is a sequel to the Witcher short story collections Sword of Destiny and The Last
+						Wish, and is continued by Time of Contempt. Summary of the book:<br>
+					</p>
+
+					<div class="scrollable-card scrollbar-card scrollbar-style">
+						<p class="section-paragraph card-text-alignments">
+							The Empire of Nilfgaard attacks the Kingdom of Cintra. Queen Calanthe commits suicide and
+							her
+							granddaughter, Cirilla manages to flee from
+							the burning capital city. Emhyr var Emreis, Emperor of Nilfgaard, sends his spies to find
+							her.
+							He knows that this young girl has great importance, not only because of her royal blood, but
+							also because of her magical potential and elven blood in her veins. <br>
+							<br>
+							The girl is being protected by Geralt of Rivia, a witcher - a magically and genetically
+							mutated
+							monster slayer for hire, who takes her to the witchers' keep - Kaer Morhen. There, Ciri is
+							being
+							taught by the other witchers, including old Vesemir, Coën, Eskel and Lambert. She learns
+							about monsters and how to fight them. She is taught to fight with a sword in the witcher
+							style. But during her "education", the sorceress Triss Merigold comes to Kaer Morhen. She is
+							called by Geralt to help with occasional strange and abnormal behavior he has seen in Ciri.
+							Triss realises that Ciri is a Source. She acknowledges that she does not have the power to
+							control Ciri's talent, and advises Geralt to swallow his pride and seek help with Yennefer,
+							a more experienced sorceress and his former lover.<br>
+							<br>
+							At the same time, a mysterious wizard called Rience is looking for the girl. He is a servant
+							of a more powerful mage, who remains unknown. He captures Geralt's friend, Dandelion the
+							bard,
+							and tortures him for information about Ciri.Dandelion is saved by the timely arrival of
+							Yennefer, who engages in a short magic combat with Rience. Rience manages to escape through
+							a portal opened by his master, but left with a prominent facial scar from Yennefer's
+							spell.<br>
+							<br>
+							In the spring, Geralt leaves Kaer Morhen with Triss and Ciri, intending to deliver Ciri to
+							the Temple School in Ellander where she would receive a "normal" education from Nenneke.
+							Geralt does his best to track Rience and his mysterious employer. With the help
+							of Dandelion and Shani, he forces a confrontation with Rience, during which both are
+							injured. Rience's master intervenes again, opening a portal for him, and Geralt is prevented
+							from pursuing the mage by Philippa Eilhart, who also kills the last surviving of the
+							Michelet brothers so as not to provide Geralt any source of information which might
+							eventually reveal the mysterious mage. Eilhart then leaves behind a wounded Geralt.
+						</p>
+					</div>
+
+
+				</div>
+
+				<button id="blood-of-elves" class="circle-close">&times;</button>
+
+			</div>
+
+		</div>
+		<!-- book four card -->
+		<div id="book-four-card" class="more-info-div hidden visuallyhidden">
+			<div class="more-info-card" id="book-4">
+				<img src="./imgs/books/time-contempt.jpg" alt="fourth-book">
+				<div class="card-text">
+					<p class="mini-title card-title">The Witcher: Time of Contempt</p>
+
+					<p class="section-paragraph card-text-alignments">Releases: Original - 1995; English - 2013;
+						Bulgarian - 2009;<br>
+						<br>
+						Time of Contempt was written by Andrzej Sapkowski, first published in Poland in 1995 by
+						SUPERNOWA,
+						and is the fourth book in The Witcher series and the second novel in the saga. It directly
+						continues on from Blood of Elves, which begins the saga of Ciri and Geralt. Summary of the
+						book:<br>
+					</p>
+
+					<div class="scrollable-card scrollbar-card scrollbar-style">
+						<p class="section-paragraph card-text-alignments">
+							The story begins where Blood of Elves left off, essentially with Ciri and Yennefer having
+							just left the Temple in Ellander, on their way to Gors Velen, and ultimately Thanedd Island.
+							It is Yennefer's intention that Ciri be enrolled at Aretuza and that she continue her
+							instruction in the use and mastery of magic.<br>
+							<br>
+							Once they arrive in Gors Velen, Yennefer goes to see her old friend Giancardi Molnar, a
+							dwarven banker. The latter informs the sorceress that her financial movements are being
+							tracked, something Yennefer already suspected, but he arranges an essentially unlimited line
+							of credit for her and makes several financial transfers to cover expenses for Ciri's
+							education.<br>
+							<br>
+							Geralt meets Vilgefortz for
+							the first time. The mage is considered very young, he is also considered to be particularly
+							talented, but as Geralt finds out, his road to becoming a mage was not exactly the usual
+							route. The wizard was abandoned as a baby and taken in and raised by druids.<br>
+							<br>
+							Geralt escapes from Dijkstra and rushes in to save Yennefer and Ciri at the school. In the
+							ensuring chaos Yennefer and Geralt fight the invading scoi'tael supporting Vilgefortz, while
+							Ciri flees from the scene. The Black Rider plaguing Ciri's dreams turns out to be a
+							Nilfgaardian soldier that tried to escort Ciri out of Cintra to safety. Geralt finally faces
+							Vilgefortz, who makes him an offer to join him to his side under Emperor Emhyr var Emreis.
+							Geralt refuses and a fight ensues in which Geralt is soundly defeated. Tissaia finally
+							realizes her mistake and along with Triss Merigold's help, takes Geralt to safety.<br>
+							<br>
+							Ciri escapes via a portal in Tor Lara, also known as the Gulls' Tower, during Geralt's fight
+							with Vilgefortz. She awakens in Korath desert known to many as the 'frying pan' and barely
+							manages to stay alive, thanks to the help of a unicorn, whom she names "Little Horse". When
+							pushed for survival, she relies on her magical abilities involving fire, which invokes more
+							nightmares and hallucinations that forcefully entices her to take revenge on those who
+							abandoned her, which leaves her scarred and promising herself to avoid fire as a source of
+							power.<br>
+							<br>
+							After escaping the desert, she is captured by bounty hunters of Nilfgaard and manages to
+							escape from them with the help of bandits known as the Rats. She feels safe and gains a
+							sense of belonging among the group as the members faced a similar harsh reality of being
+							abandoned during the times of contempt. Through her skills she learned in Kaer Morhen she
+							impresses the group, which gains her the name Falka.
+						</p>
+					</div>
+
+
+				</div>
+
+				<button id="time-of-contempt" class="circle-close">&times;</button>
+
+			</div>
+
+		</div>
+		<!-- book five card -->
+		<div id="book-five-card" class="more-info-div hidden visuallyhidden">
+			<div class="more-info-card" id="book-5">
+				<img src="./imgs/books/baptism-fire.jpg" alt="fifth-book">
+				<div class="card-text">
+					<p class="mini-title card-title">The Witcher: Baptism of Fire</p>
+
+					<p class="section-paragraph card-text-alignments">Releases: Original - 1996; English - 2014;
+						Bulgarian - 2010;<br>
+						<br>
+						Baptism of Fire, written by Andrzej Sapkowski, was first published in
+						Poland in 1996 and is the fifth book in The Witcher series and the third novel in the saga, thus
+						continuing the saga of Geralt and Ciri directly onwards from the end of Time of Contempt.
+						Summary of the book:<br>
+					</p>
+
+					<div class="scrollable-card scrollbar-card scrollbar-style">
+						<p class="section-paragraph card-text-alignments">
+							While recovering in Brokilon from his injuries sustained during the Thanedd coup, Geralt
+							meets Milva, a hunter and expert archer. Her mastery of the bow is unequalled. Despite not
+							particularly liking the convalescing witcher, she decides to follow Geralt, who is
+							accompanied by Dandelion, on his way towards Nilfgaard and hopefully, Ciri. The journey is
+							not easy, the war is encroaching seemingly from all directions and nearly every city is
+							ablaze.<br>
+							<br>
+							At several points in their journey, Geralt and his companions come across Cahir, the
+							erstwhile "Black Rider" that plagued Ciri's dreams. Initially, the knight is being
+							transported as a prisoner by some hawkers, when Geralt spares his life for the second time.
+							However, the witcher wants nothing to do with the young Nilfgaardian and leaves him to his
+							own devices, Cahir is ever persistent and continues to shadow the witcher and his entourage.
+							Eventually, through Milva's intervention, the young knight comes to join the group.<br>
+							<br>
+							Finally, the troupe is joined by Regis, a vampire, some might say "monster", who rather
+							surprisingly becomes the monster hunter's good friend. Regis proves invaluable for his
+							medical skills.<br>
+							<br>
+							As the group travels east, they are inevitably caught between the warring factions which
+							leads them into the thick of the Battle for the Bridge on the Yaruga where the group is
+							pivotal in queen Meve's victory. Geralt had previously named himself "Geralt of Rivia" for
+							credibility sake, however, it is shortly after this battle that Geralt is coincidentally
+							knighted by the queen and officially becomes "Geralt of Rivia".
+						</p>
+					</div>
+
+				</div>
+
+				<button id="baptism-of-fire" class="circle-close">&times;</button>
+
+			</div>
+
+		</div>
+		<!-- book six card -->
+		<div id="book-six-card" class="more-info-div hidden visuallyhidden">
+			<div class="more-info-card" id="book-6">
+				<img src="./imgs/books/tower-swallow.jpg" alt="sixth-book">
+				<div class="card-text">
+					<p class="mini-title card-title">The Witcher: The Tower Of The Swallow</p>
+
+					<p class="section-paragraph card-text-alignments">Releases: Original - 1997; English - 2016;
+						Bulgarian - 2010;<br>
+						<br>
+						The Tower of the Swallow, was
+						written by Andrzej Sapkowski and was first published in Poland in 1997 and is the sixth book in
+						The Witcher series and the fourth novel in the saga.
+						Summary of the book:<br>
+					</p>
+
+					<div class="scrollable-card scrollbar-card scrollbar-style">
+						<p class="section-paragraph card-text-alignments">
+							One day, old Vysogota finds a very badly injured girl in the swamp surrounding his retreat.
+							He saves her life and she tells him her story... the story of Ciri and how she became a
+							cruel killer meeting death at every step. Until she met her retribution - Leo Bonhart, who
+							killed her fellow bandits and captured her.<br>
+							<br>
+							Meanwhile, Geralt is on his way to find Druids who might know where Ciri is. But someone is
+							determined that the witcher should not find her...<br>
+							<br>
+							Vysogota, an old philosopher living in the Pereplut swamp, finds an injured Ciri near his
+							retreat and takes her in, caring for her until she is ready to continue her journey. She
+							tells her life story to the old man: how all the Rats were killed by Leo Bonhart, all except
+							for Ciri. As she readies herself to leave, she is convinced that both Geralt and Yennefer
+							are dead. Based on this assumption, she leaves Vysogota to find Tor Zireael.<br>
+							<br>
+							Meanwhile, Geralt meets an elf named Avallac'h who tells him about a prophecy connected with
+							Ciri. He needs to find some druids who will reportedly know where Ciri is. Yennefer is
+							trying to find Vilgefortz's hiding place, but it is no easy task.
+						</p>
+					</div>
+
+				</div>
+
+				<button id="tower-of-the-swallow" class="circle-close">&times;</button>
+
+			</div>
+
+		</div>
+		<!-- book seven card -->
+		<div id="book-seven-card" class="more-info-div hidden visuallyhidden">
+			<div class="more-info-card" id="book-7">
+				<img src="./imgs/books/lady-of-lake.jpg" alt="seventh-book">
+				<div class="card-text">
+					<p class="mini-title card-title">The Witcher: The Lady of The Lake</p>
+
+					<p class="section-paragraph card-text-alignments">Releases: Original - 1999; English - 2017;
+						Bulgarian - 2010;<br>
+						<br>
+						The Lady of the Lake, written by Andrzej Sapkowski and first published in
+						Poland in 1999, is the seventh book in The Witcher series and the fifth novel in the saga. It
+						continues the story from The Tower of the Swallow.
+						Summary of the book:<br>
+					</p>
+
+					<div class="scrollable-card scrollbar-card scrollbar-style">
+						<p class="section-paragraph card-text-alignments">
+							After walking through the portal in Tor Zireael while narrowly escaping death, Ciri finds
+							herself in a completely different world... an Elven world. She is trapped there with no
+							apparent way out. Time does not seem to exist and there are no obvious borders or portals to
+							cross back into her home world.<br>
+							<br>
+							But this is Ciri, the child of prophecy, and she will not be defeated. She knows she must
+							escape to finally rejoin the Witcher, Geralt, and his companions - and also to try to
+							conquer her worst nightmare. Leo Bonhart, the man who chased, wounded and tortured Ciri, is
+							still on her trail. And the world is still at war.<br>
+							<br>
+							The story opens with Ciri bathing in a pond in an unknown world. As she does so, Sir Galahad
+							of the Arthurian legend stumbles upon her. After mistaking her for the fabled Lady of the
+							Lake, they talk and Ciri recounts her story.<br>
+							<br>
+							The story is then told as a sequence of dreams, jumping from one event to another
+							chronologically.<br>
+							<br>
+							After Ciri ends recounting her tale to Galahad, who has been listening intently the entire
+							time,
+							she says she "could" claim that the tale ends with Geralt and Yennefer waking in an unknown
+							location, comforting each other; that they marry, and that a celebration ensued between all
+							the different dead and alive characters of the saga.<br>
+							<br>
+							Galahad eventually invites her to the court at Camelot, which she accepts. The saga ends
+							with Ciri and Galahad riding side by side, holding hands.
+						</p>
+					</div>
+
+				</div>
+
+				<button id="lady-of-the-lake" class="circle-close">&times;</button>
+
+			</div>
+
+		</div>
+		<!-- book eight card -->
+		<div id="book-eight-card" class="more-info-div hidden visuallyhidden">
+			<div class="more-info-card" id="book-8">
+				<img src="./imgs/books/season-storms.jpg" alt="eight-book">
+				<div class="card-text">
+					<p class="mini-title card-title">The Witcher: Season of Storms</p>
+
+					<p class="section-paragraph card-text-alignments">Releases:<br>
+						Original - 2013;<br>
+						English - 2018;<br>
+						Bulgarian - 2017;<br>
+						<br>
+						Season of Storms is the sixth Witcher novel and eighth overall book in the
+						series written by Andrzej Sapkowski. It is not a follow-up to the spin-off of the Witcher series
+						proper, but instead a midquel, set before "The Witcher" short story but after most of the other
+						stories in The Last Wish.<br>
+
+					</p>
+
+					<p class="section-paragraph card-text-alignments">
+						Summary of the book:<br>
+						Geralt of Rivia is a Witcher, one of the few capable of hunting the monsters that prey on
+						humanity. A mutant who is tasked with killing unnatural beings. He uses magical signs,
+						potions, and the pride of every Witcher - two swords, steel and silver.
+						But a contract has gone wrong, and Geralt finds himself without his signature weapons. Now
+						he needs them back, because sorcerers are scheming, and across the world clouds are
+						gathering.
+						The season of storms is coming...
+					</p>
+
+
+				</div>
+
+				<button id="season-of-storms" class="circle-close">&times;</button>
+
+			</div>
+
+		</div>
+
+		<hr id="line-between-books-and-games">
+
+		<!-- --------------------------------GAMES-------------------------------- -->
+		<!-- games scrollable -->
+		<div id="games">
+			<p class="section-titles">Play the games</p>
+			<div id="games-scrollable">
+				<div class="slider-games">
+					<div class="section-paragraph game-text">
+						<p class="mini-title">The Witcher - released 2007</p>
+						<img src="imgs/games/witcher1rate.jpg" alt="witcher-1-rating" class="rating-imgs">
+						<p>The Witcher is a 2007 action role-playing game
+							developed by CD Projekt Red, based on the novel series of The Witcher by Polish author
+							Andrzej Sapkowski, taking place
+							after the events of the main saga.
+							The story takes place in a medieval fantasy world and follows Geralt of Rivia, one of a few
+							traveling monster hunters who have supernatural powers, known as Witchers.</p>
+					</div>
+					<div class="game-img-div">
+						<img src="imgs/games/witcher1.jpg" alt="game1" class="game-cover">
+						<div class="game-overlay"></div>
+						<div class="game-info">
+							<a href="https://thewitcher.com/en/witcher1">
+								<p class="game-info-text">Official <br> Website</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="slider-games">
+					<div class="section-paragraph game-text">
+						<p class="mini-title">The Witcher 2: Assassins of Kings - released 2011</p>
+						<img src="imgs/games/witcher2rate.png" alt="witcher-2-rating" class="rating-imgs">
+						<p>The Witcher 2: Assassins of Kings is an action
+							role-playing video game developed by CD Projekt Red and is the sequel to the 2007 game The
+							Witcher and the second
+							main installment in The Witcher's video game series.
+
+							The player directs the actions of Geralt of Rivia, a monster hunter known as a Witcher.
+							The fantasy world in which his adventures take place owes much to Polish history
+							and Slavic mythology.</p>
+					</div>
+					<div class="game-img-div">
+						<img src="imgs/games/witcher2.jpg" alt="game2" class="game-cover">
+						<div class="game-overlay"></div>
+						<div class="game-info">
+							<a href="https://thewitcher.com/en/witcher2">
+								<p class="game-info-text">Official <br> Website</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="slider-games">
+					<div class="section-paragraph game-text">
+						<p class="mini-title">The Witcher 3: Wild Hunt - released 2015</p>
+						<img src="imgs/games/witcher3rate.png" alt="witcher-3-rating" class="rating-imgs">
+						<p>The Witcher 3: Wild Hunt is an action role-playing game developed and published by Polish
+							developer CD Projekt Red. It is the sequel to the 2011 game The Witcher 2: Assassins of
+							Kings and
+							is the third main installment in The Witcher's video game series, played in a fantasy world
+							based on Slavic mythology.
+							Players control Geralt of Rivia, a monster slayer for hire known as a Witcher, and search
+							for his adopted daughter, who is on the run from the otherworldly Wild Hunt. The game's
+							story has three possible endings, determined by
+							the player's choices at key points in the narrative.</p>
+					</div>
+					<div class="game-img-div">
+						<img src="imgs/games/witcher3.jpg" alt="game3" class="game-cover">
+						<div class="game-overlay"></div>
+						<div class="game-info">
+							<a href="https://thewitcher.com/en/witcher3">
+								<p class="game-info-text">Official <br> Website</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="slider-games">
+					<div class="section-paragraph game-text">
+						<p class="mini-title">Gwent: The Witcher Card Game - released 2018</p>
+						<img src="imgs/games/gwent-rate.png" alt="gwent-rating" class="rating-imgs">
+						<p>Gwent: The Witcher Card Game is a free-to-play digital collectible card game developed and
+							published by CD Projekt. The game is derived from the card game of the same
+							name featured in Andrzej Sapkowski's The Witcher novels and playable in The Witcher 3: Wild
+							Hunt video game.
+
+							Gwent is a turn-based card game between two players, with each game taking three rounds.
+							Each player must play one card each turn from a deck of at least twenty-five cards. </p>
+					</div>
+					<div class="game-img-div">
+						<img src="imgs/games/gwent.jpg" alt="gwent" class="game-cover">
+						<div class="game-overlay"></div>
+						<div class="game-info">
+							<a href="https://www.playgwent.com/en">
+								<p class="game-info-text">Official <br> Website</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="slider-games">
+					<div class="section-paragraph game-text">
+						<p class="mini-title">Thronebreaker: The Witcher Tales - released 2018</p>
+						<img src="imgs/games/thronebreaker-rate.png" alt="thonebreaker-rating" class="rating-imgs">
+						<p>Thronebreaker: The Witcher Tales is a role-playing video game developed by CD Projekt Red. It
+							is a spin-off of The Witcher video game franchise, and acts as the standalone single-player
+							component for Gwent: The Witcher Card Game.
+							In Thronebreaker's 30-hour-long campaign, the player takes the control of Queen Meve, the
+							ruler of Lyria and Rivia, during the events that precede The Witcher video games.
+						</p>
+					</div>
+					<div class="game-img-div">
+						<img src="imgs/games/thronebreaker.jpg" alt="thronebreaker" class="game-cover">
+						<div class="game-overlay"></div>
+						<div class="game-info">
+							<a href="https://thewitcher.com/en/thronebreaker-witchertales">
+								<p class="game-info-text">Official <br> Website</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button id="slide-left-games" class="button-left" type="button"><i class="arrow left"></i></button>
+			<button id="slide-right-games" class="button-right" type="button"><i class="arrow right"></i></button>
+		</div>
+
+		<hr id="line-between-games-and-media">
+
+		<!-- --------------------------------MEDIA-------------------------------- -->
+		<div id="media">
+			<p class="section-titles">Media</p>
+			<div id="media-sub-div">
+				<div id="trailers-div">
+					<div class="media-trailers">
+						<div class="vid-border">
+							<iframe width="520" height="315" src="https://www.youtube.com/embed/1-l29HlKkXU"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</div>
+					<div class="media-trailers">
+						<div class="vid-border">
+							<iframe width="520" height="315" src="https://www.youtube.com/embed/c0i88t0Kacs"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</div>
+					<div class="media-trailers">
+						<div class="vid-border">
+							<iframe width="520" height="315" src="https://www.youtube.com/embed/FcogCjLymeI"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</div>
+					<div class="media-trailers">
+						<div class="vid-border">
+							<iframe width="520" height="315" src="https://www.youtube.com/embed/MqQ3LeBgGDM"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen>
+							</iframe>
+						</div>
+					</div>
+				</div>
+				<button id="slide-left-media" class="button-left" type="button"><i class="arrow left"></i></button>
+				<button id="slide-right-media" class="button-right" type="button"><i class="arrow right"></i></button>
+				<button class="scroll-toggle" onclick="stopSlidingMedia()" type="button">Pause auto-slide</button>
+
+				<div id="trailers-text" class="section-paragraph">
+					<p class="mini-title">Watch cinematics!</p>
+					<p>There are all kinds of videos you can find about The Witcher,
+						ranging from fan made reviews, lore explanations and audio books to
+						game trailers (some of which you can see on the left) and more!
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="transparent-bottom">
+			<p>here is a div to fix the problem of not being able to see the whole bottom of the page</p>
+		</div>
+
+		<button id="back-to-top" class="hidden visuallyhidden" onclick="topFunction()" type="button"><i
+				class="arrow up"></i></button>
+
+	</div>
+	<!-- footer -->
+	<footer class="footer-distributed">
+		<div class="footer-left">
+			<p>STOYAN ILIEV &copy;
+				<script>
+					let mydate = new Date()
+					let year = mydate.getYear()
+					if (year < 1000)
+						year += 1900
+					let day = mydate.getDay()
+					let month = mydate.getMonth() + 1
+					if (month < 10)
+						month = "0" + month
+					let daym = mydate.getDate()
+					if (daym < 10)
+						daym = "0" + daym
+					document.write("<small><font color='white' face='sans-serif'><b>" + daym + "/" + month + "/" + year + "</b></font></small>")
+				</script>
+			</p>
+
+		</div>
+	</footer>
+
+	<script src="./scripts/autoScrollFunctionality.js"></script>
+	<script src="./scripts/hideNavAndScrollTop.js"></script>
+	<script src="./scripts/bookCardFunctionality.js"></script>
+	<script src="./scripts/charCardFunctionality.js"></script>
+	<script src="./scripts/homeButtonsFunctionality.js"></script>
+	<script src="./scripts/autoScrollOnFocus.js"></script>
+
+	<script>
+		//scripts written here before taken out of document
+
+	</script>
+</body>
+
+</html>

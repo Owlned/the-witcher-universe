@@ -1,0 +1,96 @@
+// buttons for scrolling books
+const buttonRightBooks = document.getElementById('slide-right-books');
+const buttonLeftBooks = document.getElementById('slide-left-books');
+const booksDiv = document.getElementById('horizontal-scroll-books');
+
+buttonRightBooks.onclick = function () {
+    let scrollReach = booksDiv.scrollWidth;
+    booksDiv.scrollLeft += 593;
+    if (booksDiv.scrollLeft + 593 > scrollReach) {
+        booksDiv.scrollLeft -= 1779;
+    }
+    buttonRightBooks.disabled = true;
+    clearInterval(autoScrollId);
+    setTimeout(function () { buttonRightBooks.disabled = false; }, 600);
+    setTimeout(function () { autoScrollId = setInterval(autoScrollBooks, 5000) }, 600);
+};
+
+buttonLeftBooks.onclick = function () {
+    booksDiv.scrollLeft -= 593;
+    buttonLeftBooks.disabled = true;
+    clearInterval(autoScrollId);
+    setTimeout(function () { buttonLeftBooks.disabled = false; }, 600);
+    setTimeout(function () { autoScrollId = setInterval(autoScrollBooks, 5000) }, 600);
+};
+
+// buttons for scrolling characters
+const buttonRightChars = document.getElementById('slide-right-chars');
+const buttonLeftChars = document.getElementById('slide-left-chars');
+const charactersDiv = document.getElementById('characters-scrollable');
+
+buttonRightChars.onclick = function () {
+    let scrollReach = charactersDiv.scrollWidth;
+    charactersDiv.scrollLeft += 1545;
+    if (charactersDiv.scrollLeft + 1545 > scrollReach) {
+        charactersDiv.scrollLeft -= 7725;
+    }
+    buttonRightChars.disabled = true;
+    clearInterval(autoScrollIdChars);
+    setTimeout(function () { buttonRightChars.disabled = false; }, 600);
+    setTimeout(function () { autoScrollIdChars = setInterval(autoScrollChars, 15000) }, 600);
+};
+
+buttonLeftChars.onclick = function () {
+    charactersDiv.scrollLeft -= 1545;
+    buttonLeftChars.disabled = true;
+    clearInterval(autoScrollIdChars);
+    setTimeout(function () { buttonLeftChars.disabled = false; }, 600);
+    setTimeout(function () { autoScrollIdChars = setInterval(autoScrollChars, 15000) }, 600);
+};
+
+// buttons for scrolling games
+const buttonRightGames = document.getElementById('slide-right-games');
+const buttonLeftGames = document.getElementById('slide-left-games');
+const gamesDiv = document.getElementById('games-scrollable');
+
+buttonRightGames.onclick = function () {
+    let scrollReach = gamesDiv.scrollWidth;
+    gamesDiv.scrollLeft += 1505;
+    if (gamesDiv.scrollLeft + 1505 > scrollReach) {
+        gamesDiv.scrollLeft -= 7525;
+    }
+    buttonRightGames.disabled = true;
+    clearInterval(autoScrollGamesId);
+    setTimeout(function () { buttonRightGames.disabled = false; }, 600);
+    setTimeout(function () { autoScrollGamesId = setInterval(autoScrollGames, 10000) }, 600);
+};
+
+buttonLeftGames.onclick = function () {
+    gamesDiv.scrollLeft -= 1505;
+    buttonLeftGames.disabled = true;
+    clearInterval(autoScrollGamesId);
+    setTimeout(function () { buttonLeftGames.disabled = false; }, 600);
+    setTimeout(function () { autoScrollGamesId = setInterval(autoScrollGames, 10000) }, 600);
+};
+
+// buttons for scrolling media
+const buttonRightMedia = document.getElementById('slide-right-media');
+const buttonLeftMedia = document.getElementById('slide-left-media');
+const mediaDiv = document.getElementById('trailers-div');
+
+buttonRightMedia.onclick = function () {
+    let scrollReach = mediaDiv.scrollWidth;
+    mediaDiv.scrollLeft += 577;
+    if (mediaDiv.scrollLeft + 1000 > scrollReach) {
+        mediaDiv.scrollLeft -= 2300;
+    }
+    buttonRightMedia.disabled = true;
+    setTimeout(function () { buttonRightMedia.disabled = false; }, 600);
+
+};
+
+buttonLeftMedia.onclick = function () {
+    mediaDiv.scrollLeft -= 577;
+    buttonLeftMedia.disabled = true;
+    setTimeout(function () { buttonLeftMedia.disabled = false; }, 600);
+};

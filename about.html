@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> The Witcher Universe </title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="initial-scale=1">
+	<link rel="shortcut icon" href="imgs/favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap" rel="stylesheet">
+
+	<script src="./scripts/navbarTransform.js"></script>
+
+</head>
+
+<body>
+	<!-- navbar -->
+	<header>
+		<div class="navigation-bar">
+			<nav>
+				<img src="imgs/navbar-logo.png" alt="logo" id="logo">
+
+				<ul>
+					<li><a href="index.html"> home </a></li>
+					<li><a href="world.html"> world </a></li>
+					<li class="active"><a href="about.html"> about </a></li>
+				</ul>
+
+				<div class="dropdown">
+					<div class="dropdown-btn" onclick="transformButton(this); showHideContent()">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+
+					<div class="dropdown-content">
+						<a href="index.html"> home </a>
+						<a href="world.html"> world </a>
+						<a href="about.html"> about </a>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+	</header>
+
+	<!-- main -->
+	<div id="main">
+
+		<!-- title -->
+		<div id="about-section">
+			<p id="homepage-title">The Witcher Universe</p>
+
+			<div id="about-container">
+				<div id="about-author-left">
+					<img src="imgs/author.jpeg" id="my-mug" alt="image">
+					<div class="overlay">
+						<div class="text">Stoyan Iliev</div>
+					</div>
+				</div>
+
+				<div id="about-author-right">
+
+					<div>
+						<h1 id="about-author">About the author</h1>
+					</div>
+					<div id="about-text-container">
+						<p id="about-author-text">Stoyan Iliev is a bulgarian with a passion both for computers and The
+							Witcher. Able to code in C#, HTML, CSS and JavaScript and possessing knowledge
+							and a bit of experience with OOP, databases, alghoritms, structures of data amd others.
+							This website was made as a passion project, aiming to showcase all the books, important
+							characters, places, games and much more.
+							It is suitable both for fans of the series looking to learn something new and for people,
+							completely unfamiliar with The Witcher.
+
+						</p>
+					</div>
+					
+
+				</div>
+
+				<div id="about-page-links">
+					<div>
+						<a href="https://github.com/Owlned">
+							<img src="imgs/github-logo.png" alt="git-logo">
+						</a>
+					</div>
+					<div>
+						<a href="https://www.linkedin.com/in/stoyan-iliev-a1541b249/">
+							<img src="imgs/linkedin-logo.png" alt="in-logo">
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<!-- footer -->
+	<footer class="footer-distributed">
+		<div class="footer-left">
+			<p>STOYAN ILIEV &copy;
+				<script>
+					let mydate = new Date()
+					let year = mydate.getYear()
+					if (year < 1000)
+						year += 1900
+					let day = mydate.getDay()
+					let month = mydate.getMonth() + 1
+					if (month < 10)
+						month = "0" + month
+					let daym = mydate.getDate()
+					if (daym < 10)
+						daym = "0" + daym
+					document.write("<small><font color='white' face='sans-serif'><b>" + daym + "/" + month + "/" + year + "</b></font></small>")
+				</script>
+			</p>
+
+		</div>
+	</footer>
+</body>
+
+</html>

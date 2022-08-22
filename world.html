@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> The Witcher Universe </title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="imgs/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap" rel="stylesheet">
+
+	<script src="./scripts/navbarTransform.js"></script>
+	<script src="./scripts/mapMagnifier.js"></script>
+
+	<script>
+		// switch display of map and kingdoms, because the magnifying glass doesnt work otherwise
+		function switchDisplay() {
+			document.getElementById("world-map-div").style.display = "none";
+			document.getElementById("world-map-div").style.opacity = "1";
+
+			document.getElementById("world-kingdoms-div").style.display = "block";
+		}
+	</script>
+
+</head>
+
+<body onload="switchDisplay()">
+	<!-- navbar -->
+	<header>
+		<div class="navigation-bar">
+			<nav>
+				<img src="imgs/navbar-logo.png" alt="logo" id="logo">
+
+				<ul>
+					<li><a href="index.html"> home </a></li>
+					<li class="active"><a href="world.html"> world </a></li>
+					<li><a href="about.html"> about </a></li>
+				</ul>
+
+				<div class="dropdown">
+					<div class="dropdown-btn" onclick="transformButton(this); showHideContent()">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+
+					<div class="dropdown-content">
+						<a href="index.html"> home </a>
+						<a href="world.html"> world </a>
+						<a href="about.html"> about </a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<div id="main" onmousewheel="scrollFunction()">
+		<div id="world-text">
+			<p id="world-title">The Kingdoms</p>
+			<p id="world-subtitle">The Witcher series take place on an unnamed planet referred to by its people as the
+				World, the Earth or the Globe. Approximately 90% of land is on the northern hemisphere.</p>
+			<div id="world-buttons">
+				<button id="map-button" class="world-toggle" onclick="toggleMap()" type="button">Map</button>
+				<button id="kingdoms-button" class="world-toggle" onclick="toggleKingdoms()" type="button"
+					disabled>Kingdoms</button>
+			</div>
+		</div>
+
+		<div id="world-kingdoms-div">
+			<div class="kingdoms">
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/flags/kovir-poviss-flag.png" alt="kovir-flag" class="flag-img">
+				</div>
+				<div class="kingdom-text">
+					<p class="kingdom-name">Kovir & Poviss</p>
+					<p>
+						The Kingdom of Kovir and Poviss is one
+						of the Northern Kingdoms located on the Gulf of Praxeda. It is also the largest exporter of
+						mineral resources in the known world, with huge profits from trade. It is ruled by king Tankred
+						Thyssen of the House of Thyssen and maintained neutrality during the Second Nilfgaard War,
+						refraining from lending coin or men to either side.
+					</p>
+				</div>
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/positions/kovir-position.jpg" alt="kovir-position" class="position-img">
+				</div>
+			</div>
+			<hr>
+			<div class="kingdoms">
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/flags/kaedwen-flag.png" alt="kaedwen-flag" class="flag-img">
+				</div>
+				<div class="kingdom-text">
+					<p class="kingdom-name">Kaedwen</p>
+					<p>
+						Kaedwen is the largest of the Northern
+						Kingdoms (and the second largest country in the Continent, next to Nilfgaard). Its main cities
+						are its capital, Ard Carraigh, and the city of Ban Ard, famous for its sorcery school. Known for
+						its cold and unforgiving climate, along with the many forests within its borders.
+						Kaedwen also shares borders with the kingdoms
+						of Redania and Caingorn; and portions of the Fiery Mountains, the Kestrel Mountains and the Blue
+						Mountains run through the kingdom.
+					</p>
+				</div>
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/positions/kaedwen-position.jpg" alt="kaedwen-position" class="position-img">
+				</div>
+			</div>
+			<hr>
+			<div class="kingdoms">
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/flags/redania-flag.png" alt="redania-flag" class="flag-img">
+				</div>
+				<div class="kingdom-text">
+					<p class="kingdom-name">Redania</p>
+					<p>
+						Redania, named after Roeden, is a wealthy realm which profits from trade and agriculture and
+						one of the Four Kingdoms. The capital city of Redania is Tretogor. Other prominent cities are
+						Oxenfurt, with the largest university in the Northern Realms and the free city of Novigrad. The
+						kingdom's neighbors are Kovir, Caingorn, Kaedwen, Aedirn, and Temeria.
+					</p>
+				</div>
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/positions/redania-position.jpg" alt="redania-position" class="position-img">
+				</div>
+			</div>
+			<hr>
+			<div class="kingdoms">
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/flags/temeria-flag.png" alt="temeria-flag" class="flag-img">
+				</div>
+				<div class="kingdom-text">
+					<p class="kingdom-name">Temeria</p>
+					<p>
+						Temeria is one of the northern kingdoms, lying south of the Pontar river. Its neighbors are
+						Redania, Kerack, Kaedwen, Aedirn, Mahakam, Lower Sodden, and Cidaris.
+						After the first and second wars, Temeria profited the most out of the defeat of Nilfgaard,
+						expanding its borders as far south as Angren and Riverdell, reaching the Amell mountains. But
+						the Kingdom also received a heavy blow regarding its economy, which forced it to buy goods from
+						their southern neighbor.
+					</p>
+				</div>
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/positions/temeria-position.jpg" alt="temeria-position" class="position-img">
+				</div>
+			</div>
+			<hr>
+			<div class="kingdoms">
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/flags/aedirn-flag.png" alt="aedirn-flag" class="flag-img">
+				</div>
+				<div class="kingdom-text">
+					<p class="kingdom-name">Aedirn</p>
+					<p>
+						Aedirn, named after Aedireen, is one of the Four Kingdoms which lies between Temeria and the
+						massive Mahakam Mountains to the west, and the Blue and Fiery Mountains to the east. The Kingdom
+						is feuding with Kaedwen about the land called Lormark or Upper Aedirn, depending on the
+						interested party's political persuasion. These lands have been disputed for ages, with Kaedwen
+						laying claim to them as well.
+					</p>
+				</div>
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/positions/aedirn-position.jpg" alt="aedirn-position" class="position-img">
+				</div>
+			</div>
+			<hr>
+			<div class="kingdoms">
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/flags/cintra-flag.png" alt="cintra-flag" class="flag-img">
+				</div>
+				<div class="kingdom-text">
+					<p class="kingdom-name">Cintra</p>
+					<p>
+						Cintra is one of the Northern Kingdoms, located south of Sodden,
+						Riverdell, and the great river Yaruga.
+						Cintra was a very powerful kingdom in the times of Queen Calanthe, but was conquered by
+						Nilfgaard during the First Nilfgaard War. After the Second Nilfgaard War, the kingdom was
+						nominally an independent state, but was actually ruled by Emperor Emhyr var Emreis of Nilfgaard.
+						Cintra's neighbors are Sodden, Brugge, and the Nilfgaard province of Nazair.
+					</p>
+				</div>
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/positions/cintra-position.jpg" alt="cintra-position" class="position-img">
+				</div>
+			</div>
+			<hr>
+			<div class="kingdoms">
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/flags/metinna-flag.png" alt="metinna-flag" class="flag-img">
+				</div>
+				<div class="kingdom-text">
+					<p class="kingdom-name">Metinna</p>
+					<p>
+						Metinna is one of the kingdoms to the south of Amell, currently a vassal to Nilfgaardian Empire
+						and part of the Metinna Province. Comprised in large part of Mag Deira plains, for ages it
+						has been a homeland for skilled cavalrymen and famous horse breeders. It is also a major
+						trade hub between the north and the south.
+					</p>
+				</div>
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/positions/metinna-position.jpg" alt="metinna-position" class="position-img">
+				</div>
+			</div>
+			<hr>
+			<div class="kingdoms">
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/flags/ebbing-flag.png" alt="ebbing-flag" class="flag-img">
+				</div>
+				<div class="kingdom-text">
+					<p class="kingdom-name">Ebbing</p>
+					<p>
+						Ebbing is one of the largest states dependent on the Nilfgaardian Empire, though officially
+						operates as an autonomous and self-governing kingdom. Situated at the junction of rivers and
+						bordering the Great Sea, it is known for its marshes and swamps.
+						Throughout the ages, most of the Nordling cartographers considered Ebbing as the southernmost
+						part of the Continent, claiming that Gemmera and lands further south belong to another landmass.
+					</p>
+				</div>
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/positions/ebbing-position.jpg" alt="ebbing-position" class="position-img">
+				</div>
+			</div>
+			<hr>
+			<div class="kingdoms">
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/flags/gemmera-flag.png" alt="gemmera-flag" class="flag-img">
+				</div>
+				<div class="kingdom-text">
+					<p class="kingdom-name">Gemmera</p>
+					<p>
+						Gemmera or Gemmeria was a former kingdom and later one of the provinces in the Nilfgaardian
+						Empire. It was known for its fierce warriors, like Gemmerian Pacifiers.
+						Through ages, some Nordling cartographers claimed that Gemmera was the southernmost part of the
+						Continent and that the lands below belonged to another landmass, but most of the others
+						considered Ebbing to be the southern boundary. By the time of the Northern War II however these
+						beliefs were apparently abandoned.
+					</p>
+				</div>
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/positions/gemmera-position.jpg" alt="gemmera-position" class="position-img">
+				</div>
+			</div>
+			<hr>
+			<div class="kingdoms">
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/flags/nilfgaard-flag.png" alt="nilfgaard-flag" class="flag-img">
+				</div>
+				<div class="kingdom-text">
+					<p class="kingdom-name">Nilfgaardian Empire</p>
+					<p>
+						The Nilfgaardian Empire is the most powerful empire in
+						the history of the known world. It is located in the southern part of the Continent and boasts
+						both a thriving economy and a strong, well-trained army with talented commanders. It has
+						expanded mostly through the conquest of foreign countries, which were then turned into provinces
+						of the Empire. The Empire's inhabitants believe that "real" Nilfgaardians are only those born in
+						the heart of the Empire, and not those born in the conquered provinces.
+					</p>
+				</div>
+				<div class="flag-position-div">
+					<img src="imgs/kingdoms/positions/nilfgaard-position.jpg" alt="nilfgaard-position"
+						class="position-img">
+				</div>
+			</div>
+			<hr>
+		</div>
+
+		<div id="world-map-div">
+			<img src="imgs/map.jpg" id="world-map-img">
+		</div>
+
+		<div id="transparent-bottom-world">
+			<p>here is a div to fix the problem of not being able to see the whole bottom of the page</p>
+		</div>
+
+		<button id="back-to-top" class="hidden visuallyhidden" onclick="topFunction()" type="button"><i
+				class="arrow up"></i></button>
+	</div>
+
+	<!-- footer -->
+	<footer class="footer-distributed">
+		<div class="footer-left">
+			<p>STOYAN ILIEV &copy;
+				<script>
+					let mydate = new Date()
+					let year = mydate.getYear()
+					if (year < 1000)
+						year += 1900
+					let day = mydate.getDay()
+					let month = mydate.getMonth() + 1
+					if (month < 10)
+						month = "0" + month
+					let daym = mydate.getDate()
+					if (daym < 10)
+						daym = "0" + daym
+					document.write("<small><font color='white' face='sans-serif'><b>" + daym + "/" + month + "/" + year + "</b></font></small>")
+				</script>
+			</p>
+
+		</div>
+	</footer>
+
+	<script src="./scripts/hideNavAndScrollTop.js"></script>
+	<script src="./scripts/worldButtonFunctionality.js"></script>
+
+	<script>
+		magnify("world-map-img", 2.5);
+	</script>
+
+</body>
+
+</html>

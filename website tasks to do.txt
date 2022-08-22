@@ -1,0 +1,57 @@
+
+-->IN PROGRESS (so far maybe done) - fix spaghetti code (too many repeats)
+-->IN PROGRESS -MAIN WEBSITE ISSUE- fix resizing issuses 
+		(change from px to %, set page sizes to reorder the content)
+		(done for homepage (mostly))
+
+NOT FIXED-->TO DO--look if the issue with opening site and auto scroll messes up can be fixed
+
+-->TO DO-- map zoom on world small images
+-->TO DO-- add git and linkedin buttons in footer
+
+-->TO DO--try and make scroll buttons scroll all the way to the right if they are at the first element
+
+-->TO DO--see if you can add the cards trough someting like HBS and not pure code that is repeated
+
+later-->TO DO--make a better footer
+later-->TO DO--(phone compatibility)increase min width and make another small resize
+later-->TO DO-- write proper descriptions of the characters, if the site is gonna be well made (not copied from
+		wiki in a way someone unfamiliar with the witcher wont understand a thing or have any clue 
+		aka write it yourself)
+-----------------------------------------------DONE TASKS--------------------------------------------------
+-->DONE(FINALLY)--fix body to start from top  
+		--nav bar to hide on scroll down
+		--nav to show on scroll up
+
+-->DONE--move scripts to a different file 
+
+-->DONE--more info cards for books: 
+-->DONE--create a function(e) that handles opening and closing for all and dont copy paste code 8 times
+
+-->DONE-(template ready)-create popup pages for books
+
+-->DONE--add scrollable part to book card div so a lot more text can fit inside
+-->DONE--write a function that combines button functionality somehow
+
+-->DONE--make footer hide as nav?
+-->DONE--try fix bug with clicking on button the second it autoscrolls
+-->DONE(kinda vremenno reshenie)--autoscroll trailers?must pause on play!
+
+-->DONE (NOT ON HOVER THO)--vertical scrollbar that shows up as the footer(on hover)?
+
+-->DONE--char opens window with wiki page for the char (use book card template)
+-->DONE-- resize games and media (only left of home page)
+-->DONE-- minor adjustments to games resize
+
+-->DONE--start working on world section
+-->DONE--sticky buttons on world section or rework the whole map shit
+
+
+
+----------------------------------------------ADDITIONAL---------------------------------------------------
+??background gradient changes while scrolling
+check for ideas for the about page
+make map position open the map in a window instead of buttons
+
+
+

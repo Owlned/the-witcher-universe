@@ -1,0 +1,1567 @@
+
+/* background image, font */
+body {
+	background-image: url("imgs/website-background.jpg");
+	background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+	background-color: gray;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	
+
+}
+
+/* whole page alignment */
+#main{
+	min-width: 1300px;
+	position: absolute;
+    left: 10%;
+	width:80%;
+	height: 100%;
+	z-index: -1;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0px;
+	border: 2px solid black;
+	overflow: auto;
+	/* background-image: linear-gradient(to bottom right, #43cea2, #185a9d); */
+	/* background-image: linear-gradient(to bottom right, #000428, #004e92); */
+	background-color: #000000;
+	background-image: linear-gradient(180deg, #000000 0%, #2c3e50 74%);
+	scroll-behavior: smooth;
+	
+}
+
+#main::-webkit-scrollbar-track{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+	background-color: #2c3e50;
+}
+
+#main::-webkit-scrollbar{
+	width: 15px;
+	background-color: black;
+}
+
+#main::-webkit-scrollbar-thumb{
+	border-radius: 3px;
+	background-color: #151c319d;
+	background-image: -webkit-linear-gradient(90deg, transparent, rgba(70, 121, 136, 0.4) 50%, transparent, transparent)
+}
+
+/*------------------------------------------------GLOBAL CLASSES------------------------------------------------*/
+/* button classes for scrolling for every element */
+.button-right{
+	float: right;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	background: none;
+  	border: none;
+	outline:none;
+	cursor: pointer;
+
+}
+
+.button-left{
+	float: left;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	background: none;
+	border: none;
+	outline:none;
+	cursor: pointer;
+}
+
+/* button classes style and effects */
+.arrow {
+	border: solid white;
+	border-width: 0 5px 5px 0;
+	display: inline-block;
+	padding: 10px;
+}
+
+.right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+.left {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+}
+
+.up{
+	border-width: 0 4px 4px 0;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: -2px;
+	padding: 8px;
+	transform: rotate(225deg);
+	-webkit-transform: rotate(225deg);
+}
+
+/*section text styling (mini title + paragraph)*/
+.mini-title{
+	text-align: center;
+	font-size: 35px;
+	line-height: 35px;
+	color: white;
+	font-family: 'Staatliches', cursive;
+	font-weight: bold;
+}
+
+.section-paragraph{	
+	font-size: 15px;
+	line-height: 25px;
+	word-spacing: 5px;
+	color:white;
+	text-align: center;
+	white-space: normal;
+	overflow-wrap: break-word;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
+/* horizontal line style */
+hr {
+    border: 0;
+	height: 1px;
+    background-image: linear-gradient(to right, rgba(85, 85, 85, 0), rgba(255, 255, 255, 0.75), rgba(85, 85, 85, 0));
+}
+
+/* section titles */
+.section-titles{
+	text-align: left;
+	font-size: 45px;
+	color: white;
+	font-family: 'Staatliches', cursive;
+	font-weight: bold;
+	line-height: 10%;
+	margin-top: 100px;
+	margin-left: 50px;
+}
+
+/* footer styling */
+.footer-distributed{
+	background-color:rgba(0,0,0,1);
+	box-sizing: border-box;
+	text-align: left;
+	font: normal 16px sans-serif;
+	width:100%;
+	padding: 10px 10px;
+	position: fixed;
+  	bottom: 0;
+	height: 0px;
+	transition: ease-in-out 0.2s;
+
+}
+
+.footer-distributed .footer-left p{
+	color:  white;
+	font-size: 14px;
+	margin: 10px;
+}
+
+.footer-distributed:hover {
+    height: 50px;
+}
+
+.overiframe{
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	position:absolute;
+	display: block;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^GLOBAL CLASSES^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*--------------------------------------------------------------------NAVBAR--------------------------------------------------------------------*/
+/* nav bar alignment, size, color, hover effects, etc  */
+.navigation-bar{
+	position: fixed;
+	width:100%;
+	text-align: right;
+	top: 0;
+  	display: block;
+  	transition: top 0.2s;
+}
+
+nav{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 70px;
+	background: rgba(0,0,0,1);
+}
+
+.navigation-bar #logo{
+	position: absolute;
+	justify-content: space-between;
+	padding-left: 25px;
+	z-index:1;
+	height:60px;
+	width:200px;
+    top:8px;
+    left:10px;
+}
+
+.navigation-bar .active{
+	border: 1px solid white;
+	color: white;
+}
+
+nav ul{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+    top: 0px;
+	width: 100%;
+	background: rgba(0,0,0,0.8);
+	position: static;
+	z-index: -1;
+  	opacity: 1;
+  	transition: 0.5s linear;
+}
+
+nav ul a{
+	color: #ffffff;
+	padding: 14px 35px;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family:  fabersanspro;
+}
+
+nav ul li{
+	display: inline-block;
+	border: 1px solid transparent;
+    transition: border 0.5s;
+    text-decoration: none;
+	margin: 10px 0px;
+}
+
+nav ul li:hover {
+    border: 1px solid white;
+}
+
+/* navbar icon when screen is small */
+nav .dropdown {
+	display: none;
+	cursor: pointer;
+}
+
+.dropdown-btn{
+	position: absolute;
+	justify-content: space-between;
+	padding-right: 25px;
+    top:5px;
+	right:15px;
+}
+
+/* select menu animation on click */
+.bar1, .bar2, .bar3 {
+	width: 35px;
+	height: 5px;
+	background-color: white;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* dropdown menu effects */
+.dropdown-content {
+	animation: growOut 300ms ease-in-out forwards;
+	transform-origin: top center;
+	margin-top: 20px;
+	margin-right: 80px;
+	display: none;
+	position: relative;
+	background-color: #000000;
+	border: 1px solid white;
+	min-width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+	color: #ffffff;
+	padding: 15px 10px;
+	display: block;
+	border: 1px solid transparent;
+    transition: border 0.5s;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-family:  fabersanspro;
+}
+
+.dropdown-content a:hover {
+	border: 1px solid white;
+}
+
+@keyframes growOut {
+	0% {
+	   transform: scale(0)
+   }
+   80% {
+	   transform: scale(1.1)
+   }
+   100% {
+	   transform: scale(1)
+   }
+}
+
+/* max width of page before menu becoms dropdown  */
+@media (max-width: 850px) {
+	nav ul {
+		position:absolute;
+  		opacity: 0;
+	}
+
+	nav ul a{
+		display: none;
+	}
+
+	nav .dropdown {
+		display: inline-block;
+		animation: growOut 300ms ease-in-out forwards;
+		transform-origin: top center;
+	}
+}
+
+/*--------------------------------------------------------------------HOME WEBPAGE--------------------------------------------------------------------*/
+/* welcome titles, logo */
+#homepage-title{
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	font-family: 'Staatliches', cursive;
+	font-weight: bold;
+	line-height: 10%;
+	margin: 0;
+	margin-top: 10%;
+}
+
+#secondary-title{
+	margin: 30px;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	line-height: 10%;
+}
+
+/* making font smaller on page resize  */
+/* @media screen and (max-width: 750px) {
+	.navigation-bar #logo{
+		height:55px;
+		width:175px;
+	}
+
+	#homepage-title{
+		font-size: 40px;
+		margin-top: 8%;
+	}
+
+	#secondary-title{
+		font-size: 13px;
+	}
+
+} */
+
+/*--------------------------BOOKS SECTION--------------------------*/
+#books{
+	width: 100%;
+}
+
+#book-images-div{
+	position: relative;
+	width: 100%;
+}
+
+/* scrollable book part of div */
+#horizontal-scroll-books {
+	margin-left: 50px;
+	width: 580px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	scroll-behavior: smooth;
+	transition: 0.3s ease;
+}
+
+#horizontal-scroll-books > div {
+	display: inline-block;
+	margin: 20px;
+}
+
+/* books buttons position adjustments */
+#slide-right-books {
+	transform: translateY(-50%);
+	transform: translateX(48em);
+}
+
+#slide-left-books{
+	transform: translateY(-50%);
+	transform: translateX(1em);
+}
+
+/* hide scrollbar books */
+#horizontal-scroll-books::-webkit-scrollbar {
+	display: none;
+}
+
+/* book covers effects */
+.slider-books{
+	width: 250px;
+	height: 380px;
+	border: 1px solid white;
+	position: relative;
+}
+
+.book-cover{
+	width: 250px;
+	height: 380px;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:#000;
+	opacity: 0;
+	transition: 0.7s;
+}
+
+.info {
+    display: none;
+	font-size: 35px;
+	color: white;
+	font-family: 'Staatliches', cursive;
+    left : 0;
+    top : 35%;
+	right : 0;
+	cursor: pointer;
+    text-align : center;
+	position: absolute;
+	opacity: 0.8;
+}
+
+.more-info-text{
+	color: white;
+	text-decoration: none;
+}
+
+.slider-books:hover > .overlay {
+	display: block;
+	opacity: 0.8;
+}
+
+.slider-books:hover .info {
+	display: block;
+}
+
+/*book text paragraph adjustments*/
+#books-text{
+	position: absolute;
+	top:20%;
+	margin-left: 55%;
+	width: 35%;	
+}
+
+/* -------------------------books card info------------------------- */
+
+/* main card div */
+.more-info-div{
+	position: absolute;
+	z-index: 1000;
+	width: 98%;
+	height: 600px;
+	top: 110em;
+	left: 1%;
+	background: black;
+	border: 1px solid white;
+	transition: 0.3s ease-out;
+}
+
+.more-info-card > img{
+	float: left;
+	width: 300px;
+	height: 440px;
+	margin: 8% 3% 5% 3%;
+	border: 1px solid white;
+}
+
+/* whole div with text */
+.card-text{
+	float: left;
+	position: absolute;
+	top: 5%;
+	margin-left: 25%;
+	width: 65%;
+	text-align: left;
+	
+}
+
+.card-title{
+	font-size: 45px;
+	margin-left: -35%;
+	line-height: 0;
+	text-align: left;
+}
+
+.card-text-alignments{
+	text-align: left;	
+}
+
+/* scrollable summary of books 3-7 */
+.scrollable-card{
+	width: 100%;
+	height: 320px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-right: 25px;
+}
+
+/* scrollable summary scrollbar styling */
+.scrollbar-style::-webkit-scrollbar-track{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+	border-radius: 10px;
+	background-color: #CCCCCC;
+}
+
+.scrollbar-style::-webkit-scrollbar{
+	width: 12px;
+	background-color: black;
+}
+
+.scrollbar-style::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #2b2f429d;
+	background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent)
+}
+
+/* card close button */
+.circle-close {
+	left: 85%;
+	top: 3%;
+	margin-left:11%;
+	position: absolute;
+	background: #333;
+	color: #fff;
+	text-decoration: none;
+	border: 3px solid #fff;
+	border-radius: 25px;
+	padding: 8px 12px;
+	outline:none;
+	cursor: pointer;
+}
+
+/* --------------------------CHARACTER SECTION--------------------------*/
+#characters{
+	width: 100%;
+	position: relative;	
+	transition: 0.5s ease-out;
+}
+
+/* scrollable part of div  */
+#characters-scrollable{
+	width: 1500px;
+	height: 500px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	scroll-behavior: smooth;
+	transition: 0.3s ease;	
+}
+
+/* properties of the divs of chars in main scrollable div */
+.slider-chars{
+	display: inline-block;
+	width: 1500px;
+	margin: 20px;
+}
+
+/* character img div  */
+.float-right-img{
+	width: 280px;
+	height: 400px;
+	margin-right:150px;
+	float: right;
+	transform: translateY(-53%);
+	border: 1px solid white;
+	transition: 0.5s ease-out;
+
+}
+
+/* hover effects */
+.float-right-img:hover > .overlay {
+	display: block;
+	opacity: 0.8;
+}
+
+.float-right-img:hover .info {
+	display: block;
+}
+
+/* character paragraph adjustments */
+.character-text{
+	width: 800px;
+	margin-left: 100px;
+	transform: translateY(35%);
+	transition: 0.5s ease-out;
+}
+
+/* sizing and styling character imgs */
+.character-img{
+	width: 280px;
+	height: 400px;
+}
+
+/* character buttons positioning ajustments */
+#slide-right-chars{
+	transform: translateY(-50%);
+	transform: translateX(105em);
+	transition: 0.5s ease-out;
+
+}
+
+#slide-left-chars{	
+	transform: translateY(-50%);
+	transform: translateX(5em);	
+	transition: 0.5s ease-out;
+
+}
+
+#characters-scrollable::-webkit-scrollbar {
+	display: none;
+}
+
+#line-between-characters-and-world{
+	margin-top: 10%;
+}
+
+/* img link style */
+.more-info-characters{
+	color: white;
+	text-decoration: none;
+}
+
+/* ----------cards for characters------------ */
+/* main card div */
+.more-info-div-chars{
+	position: absolute;
+	z-index: 1000;
+	width: 98%;
+	height: 600px;
+	top: 67em;
+	left: 1%;
+	background: black;
+	border: 1px solid white;
+	transition: 0.3s ease-out;
+}
+
+/* whole div with text */
+.card-text-chars{
+	float: left;
+	position: absolute;
+	top: 5%;
+	margin-left: 25%;
+	width: 65%;
+	text-align: left;
+	
+}
+
+.card-title-chars{
+	font-size: 45px;
+	margin-left: -30%;
+	line-height: 0;
+	text-align: left;
+}
+
+/* card close button */
+.circle-close-char {
+	left: 85%;
+	top: 3%;
+	margin-left:11%;
+	position: absolute;
+	background: #333;
+	color: #fff;
+	text-decoration: none;
+	border: 3px solid #fff;
+	border-radius: 25px;
+	padding: 8px 12px;
+	outline:none;
+	cursor: pointer;
+}
+
+/* --------------------------TOP IMAGE SLIDESHOW SECTION--------------------------*/
+#world-slideshow{
+	width: 1445px;
+	height: 494px;
+   	margin: 0 auto;
+   	position: relative;
+}
+
+/* container for divs with images  */
+#world-images-container{
+	width: 1445px;
+	height: 494px;
+	margin-top: 50px;
+	margin-left: auto;
+    margin-right: auto;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	scroll-behavior: smooth;
+	border: 1px solid white;	
+	transition: 0.3s ease;
+
+}
+
+/* container of image */
+.world-img-div{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	width: 1445px;
+	height: 494px;
+}
+
+/* world images  */
+.world-img{
+	width: 1450px;
+	height: 500px;
+	padding:0;
+	margin: 0;
+	object-fit: cover;
+	object-position: 100% 35%;
+}
+
+#world-images-container::-webkit-scrollbar {
+	display: none;
+}
+
+#line-between-books-and-games{
+	margin-top: 5%;
+}
+
+/*--------------------------GAMES SECTION--------------------------*/
+#games{
+	position: relative;
+	margin: 0 auto;
+	transition: 0.5s ease-out;
+}
+
+/* scrollable part of div */
+#games-scrollable{
+	width: 1500px;
+	height: 520px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	margin-left: auto;
+    margin-right: auto;
+	white-space: nowrap;
+	scroll-behavior: smooth;
+	transition: 0.3s ease;
+
+}
+
+/* every game div */
+.slider-games{
+	display: inline-block;
+	width: 1450px;
+	margin: 20px;
+}
+
+/* image sizing for rating imgs */
+.rating-imgs{
+	width: 240px;
+	height:65px;
+	border: 2px solid black;
+}
+
+/* game text paragrapgh adjustments  */
+.game-text{
+	width: 800px;
+	margin-left: 100px;
+	transform: translateY(35%);
+	transition: 0.5s ease-out;
+
+}
+
+/* game cover div */
+.game-img-div{
+	width: 290px;
+	height: 410px;
+	margin-right:150px;
+	float: right;
+	transform: translateY(-70%);
+	border: 1px solid white;
+	transition: 0.5s ease-out;
+
+}
+
+/* game cover img  */
+.game-cover{
+	width: 290px;
+	height: 410px;
+}
+
+/* games buttons adjustments */
+#slide-right-games{
+	top: 55%;
+	transform: translateX(102em);
+	transition: 0.5s ease-out;
+
+}
+
+#slide-left-games{
+	top: 55%;
+	transform: translateX(8em);
+	transition: 0.5s ease-out;
+
+}
+
+/* official website on game hover */
+.game-overlay {
+	position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:#000;
+	opacity: 0;
+	transition: 0.7s;
+}
+
+.game-info-text {
+    display: none;
+	font-size: 35px;
+	color: white;
+	font-family: 'Staatliches', cursive;
+	text-decoration: none;
+	text-transform: uppercase;
+    left: 0;
+    top: 35%;
+	right: 0;
+	cursor: pointer;
+    text-align : center;
+	position: absolute;
+	opacity: 0.8;
+}
+
+.game-img-div:hover > .game-overlay {
+	display: block;
+	opacity: 0.8;
+}
+
+.game-img-div:hover .game-info-text {
+	display: block;
+}
+
+#games-scrollable::-webkit-scrollbar {
+	display: none;
+}
+
+#line-between-games-and-media{
+	margin-top: 10%;
+}
+
+/* --------------------------MEDIA SECTION--------------------------*/
+#media{
+	position: relative;
+	margin: 0 auto;
+	transition: 0.5s ease-out;
+}
+
+/* videos positioning and styling */
+#trailers-div{
+	position: absolute;
+	margin-left: 85px;
+	width: 575px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	scroll-behavior: smooth;
+	transition: 0.5s ease-out;
+
+}
+
+.media-trailers{
+	display: inline-block;
+	margin: 25px;
+}
+
+.vid-border{
+	position: relative;
+	height: 315px;
+	width: 520px;
+	border: 2px solid white;
+	overflow: hidden;
+}
+
+#media-sub-div{	
+	display: inline-block;
+	width: 1400px;
+	margin-top: 50px;
+	overflow: show;
+}
+
+/* hide scrollbar media */
+#trailers-div::-webkit-scrollbar {
+	display: none;
+}
+
+/* buttons adjustments */
+#slide-right-media {
+	top: 90%;
+	transform: translateX(50em);
+	transition: 0.5s ease-out;
+
+}
+
+#slide-left-media{
+	top: 90%;
+	transform: translateX(4em);
+	transition: 0.5s ease-out;
+
+}
+
+.scroll-toggle{
+	position: absolute;
+	top:30em;
+	left: 13.5em;
+	width: 300px;
+	height: 40px;
+	margin: 10px;
+	padding: 5x;
+	font-size: 15px;
+	font-weight: bold;
+	outline: none; 
+	background-color: black;
+	color: white; 
+	cursor: pointer; 	
+	border-radius: 20px;
+	font-family: 'Open Sans', sans-serif;
+	transition: 0.5s ease-out;
+}
+
+.scroll-toggle:hover{
+	background-color: white;
+	color: black; 
+}
+/* media text paragraph adjustments */
+#trailers-text{
+	width: 550px;
+	float: right;
+	overflow: hidden;
+	transform: translateY(25%);
+	transition: 0.5s ease-out;
+
+}
+
+/* invisible div to show content at the bottom  */
+#transparent-bottom{
+	margin-top: 15%;
+	font-size: 45px;
+	cursor: default;
+	bottom: 0;
+	opacity: 0;
+}
+
+/* back to top button styling */
+#back-to-top {
+	position: fixed; 
+	bottom: 80px; 
+	right: 65px; 
+	z-index: 99;  
+	outline: none; 
+	background-color: black;
+	color: white; 
+	cursor: pointer; 
+	padding: 5px; 
+	border-radius: 50%; 
+	transition: 0.5s ease-out;
+}
+
+.hidden {
+	display: none;
+}
+  
+.visuallyhidden {
+	opacity: 0;
+}
+
+#back-to-top:hover { 
+	background-color: white;
+}
+
+#back-to-top:hover > .arrow.up{
+	border: solid black;
+	border-width: 0 4px 4px 0;
+
+}
+
+/* --------------------------- resizing changes for home---------------------------  */
+
+@media (max-width: 1850px) {
+	#main{
+		width: 90%;
+		left: 5%;
+	}
+
+	#slide-right-games{
+		transform: translateX(108em);
+	}
+}
+
+@media (max-width: 1650px) {
+	#main{
+		width: 100%;
+		left: 0%;
+	}
+
+	#slide-right-games{
+		transform: translateX(104em);
+	}
+}
+
+@media (max-width: 1450px) {
+
+	/* world slideshow resize */
+	#world-slideshow{
+		width: 1300px;
+		height: 494px;
+	}
+
+	#world-images-container{
+		width: 1300px;
+		height: 494px;	
+	}
+
+	.world-img-div{
+		width: 1445px;
+		height: 494px;
+	}
+
+	.world-img{
+		width: 1450px;
+		height: 500px;
+	}
+
+	/* characters resize */
+	#characters{
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	#characters-scrollable{
+		width: 100%;
+		height: 750px;
+	}
+	
+	.float-right-img{
+		margin-top: -40%;
+		transform: translateX(-34em);
+	}
+	
+	.character-text{
+		width: 600px;
+		position: relative;
+		margin-top:28%;
+		margin-left: 26%;
+	}
+	
+	#slide-right-chars{
+		transform: translateX(75em);
+	}
+	
+	#slide-left-chars{	
+		transform: translateX(30em);	
+	}
+
+	/* ----------cards for characters------------ */
+	/* main card div */
+	.more-info-div-chars{
+		height: 820px;
+		top: 65em;
+	}
+
+	/* whole div with text */
+	.card-text-chars{
+		top: 6%;
+		margin-left: 28%;
+	}
+
+	.card-title-chars{	
+		margin-left: -38%;
+	}
+
+	.more-info-card > img{
+		margin: 14% 2% 5% 3%;
+	}
+	
+	/* ----------cards for books------------ */
+	.more-info-div{
+		top: 123em;
+	}
+	
+	.more-info-card > img{
+		margin: 10% 5% 5% 3%;
+	}
+	
+	.card-text{
+		margin-left: 30%;
+		width: 60%;	
+	}
+	
+	.card-title{
+		margin-left: -45%;
+	}
+
+	/* games resize */
+	#games-scrollable{
+		height: 820px;
+	}
+	
+	.game-text{
+		width: 650px;
+		transform: translateY(26em);
+		margin-left: 25%;
+	}
+
+	.game-img-div{
+		margin-top: -28%;
+		transform: translateX(-30em);
+	}
+
+	#slide-right-games{
+		top: 70%;
+		transform: translateX(85em);
+	}
+	
+	#slide-left-games{
+		top: 70%;
+		transform: translateX(20em);
+	}
+	
+	/* media resize */
+	#media{
+		height: 520px;
+	}
+
+	#trailers-div{
+		margin-left: 28em;
+	}
+	
+	#media-sub-div{	
+		margin-top: 25em;
+		transform: translateY(-10em);
+	}
+	
+	#slide-right-media {
+		top: 70%;
+		transform: translateX(75em);
+	}
+
+	#slide-left-media{
+		top: 70%;
+		transform: translateX(28em);
+	}
+
+	.scroll-toggle{
+		top:25em;
+		left: 36em;
+	}
+
+	#trailers-text{
+		margin-top: 10em;
+		transform: translateY(-24em);
+		margin-right: 29%;
+	}
+}
+
+@media (max-width: 1300px) {
+	/* world slideshow resize */
+	#world-slideshow{
+		width: 1200px;
+	}
+
+	#world-images-container{
+		width: 1200px;
+	}
+
+	/* characters resize */
+	.float-right-img{
+		transform: translateX(-37em);
+	}
+	
+	.character-text{
+		margin-top:28%;
+		margin-left: 23%;
+	}
+	
+	#slide-right-chars{
+		transform: translateX(69em);
+	}
+	
+	#slide-left-chars{	
+		transform: translateX(28em);	
+	}
+
+	/* games resize */
+	.game-text{
+		margin-left: 20%;
+	}
+
+	.game-img-div{
+		transform: translateX(-35em);
+	}
+
+	#slide-right-games{
+		transform: translateX(75em);
+	}
+	
+	#slide-left-games{
+		transform: translateX(17em);
+	}
+	
+	/* media resize */
+	#trailers-div{
+		margin-left: 23em;
+	}
+	
+	#slide-right-media {
+		transform: translateX(70em);
+	}
+
+	#slide-left-media{
+		transform: translateX(22em);
+	}
+
+	.scroll-toggle{
+		left: 31em;
+	}
+
+	#trailers-text{
+		margin-right: 35%;
+	}
+}
+
+
+/*--------------------------------------------------------------------WORLD WEBPAGE--------------------------------------------------------------------*/
+/* world title and sub title styling  */
+#world-text{
+	width: 70%;
+	margin: 0 auto;
+	position: relative;
+	top: 10%;
+}
+
+#world-title{
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	font-family: 'Staatliches', cursive;
+	font-weight: bold;
+	line-height: 10%;
+	margin-top: 65px;
+}
+
+#world-subtitle{
+	margin-top: 20px;
+	font-size: 20px;
+	line-height: 25px;
+	word-spacing: 5px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	white-space: normal;
+	overflow-wrap: break-word;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#world-buttons{
+	position: relative;
+	text-align: center
+}
+
+.world-toggle{
+	width: 220px;
+	height: 55px;
+	margin: 20px;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	outline: none; 
+	background-color: black;
+	color: white; 
+	cursor: pointer; 	
+	border-radius: 20px;
+	font-family: 'Open Sans', sans-serif;
+	transition: 0.5s ease-out;
+}
+
+.world-toggle:hover{
+	background-color: white;
+	color: black; 
+}
+
+.world-toggle:disabled{
+	background-color: white;
+	color: black;
+}
+
+/* kingdoms div */
+#world-kingdoms-div{
+	display:none;
+	position: relative;
+	min-width: 1200px;
+	width: 1400px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	padding: 0;
+}
+
+.kingdoms{
+	position: relative;
+	margin: 0 auto;
+	margin-top: 50px;
+	height: 450px;
+}
+
+.kingdoms > div{
+	display: inline-block;
+}
+
+.kingdom-text{
+	width: 550px;
+	height: 400px;
+	margin: 50px;
+	font-size: 15px;
+	line-height: 25px;
+	word-spacing: 5px;
+	color:white;
+	text-align: center;
+	white-space: normal;
+	overflow-wrap: break-word;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	transform: translateY(-25%);
+	
+}
+
+.kingdom-name{
+	text-align: center;
+	font-size: 45px;
+	color: white;
+	font-family: 'Staatliches', cursive;
+	font-weight: bold;
+	line-height: 10%;
+	margin-top: 25px;
+}
+
+.flag-position-div{
+	display: flex;
+	justify-content:center;
+	width: 350px;
+	height: 400px;
+}
+
+.flag-img{
+	float:left;
+	width: 250px;
+	height: 300px;
+	margin-top: 50px;
+	margin-left: 100px;
+}
+
+.position-img{
+	float: left;
+	border: 2px solid white;
+	width: 300px;
+	height: 400px;
+}
+
+/* div holding the map img */
+#world-map-div{
+	display: block;
+	top: 10%;
+	opacity: 0;
+	position: relative;
+	min-width: 1200px;
+	width: 1400px;
+	height: 2000px;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	padding: 0;
+	border: 3px solid white;	
+}
+
+/* map image */
+#world-map-img{
+	width: 1400px;
+	height: 2000px;
+}
+
+/* class that will be added with the magnifier function */
+.img-magnifier-glass {
+	position: absolute;
+	border-radius: 5px;
+	cursor: none;
+	width: 350px;
+	height: 350px;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+/* show/hide magnifier on hover */
+#world-map-div:hover .img-magnifier-glass{
+	opacity: 1;
+	cursor: none;
+	
+}
+
+/* bottom transparent div  */
+#transparent-bottom-world{
+	margin-top: 5%;
+	font-size: 65px;
+	cursor: default;
+	bottom: 0;
+	opacity: 0;
+}
+
+/*--------------------------------------------------------------------ABOUT WEBPAGE--------------------------------------------------------------------*/
+#about-section{
+	transform: translateY(10%);
+}	
+
+#about-container{
+	margin-top: 30px;
+}
+
+/* photo section */
+#about-author-left{
+	width: 50%;
+	float: left;
+	position: relative;
+  
+}
+
+#my-mug, .overlay-mug{
+	width: 425px;
+	height: 500px;
+	border: 2px solid white;
+  	margin-left: 150px;
+	margin-top: 80px;
+	border-radius: 20%;
+  	
+}
+
+#my-mug{
+	display: block;
+}
+
+.overlay-mug {
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #008CBA;
+}
+  
+.overlay-mug:hover  {
+	opacity: 1;
+}
+  
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+/* text section */
+#about-author-right{
+	width: 50%;
+	float: right;
+	
+	
+}
+
+#about-author{
+	margin-top: 150px;
+	font-size: 30px;
+}
+
+#about-author-text{
+	font-size: 18px;
+	overflow-wrap: break-word;
+
+}
+
+#about-author, #about-author-text{
+	line-height: 35px;
+	word-spacing: 5px;
+	color:white;
+	text-align: left;
+	white-space: normal;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
+#about-text-container{
+ 	width: 80%;
+}
+
+/* links section */
+#about-page-links{
+	padding-top: 60px;
+	margin-right: 100px;
+}
+
+#about-page-links > div > a > img{
+	width: 35px;
+	height: 35px;
+	margin: 5px;
+	float: right;
+ 
+}
+
+
