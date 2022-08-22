@@ -19,7 +19,7 @@
 ## About The Project
 <div align="center">
   <a href="https://github.com/Owlned/the-withcer-universe">
-    <img src="imgs/homepage_screenshot" alt="homepage" width="250" height="80">
+    <img src="imgs/homepage_screenshot.png" alt="homepage" width="100%" height="100%">
   </a>
   
 This is a passion project that is still in progress.
