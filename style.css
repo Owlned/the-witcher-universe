@@ -153,7 +153,6 @@ hr {
 .footer-distributed{
 	background-color:rgba(0,0,0,1);
 	box-sizing: border-box;
-	text-align: left;
 	font: normal 16px sans-serif;
 	width:100%;
 	padding: 10px 10px;
@@ -164,10 +163,18 @@ hr {
 
 }
 
-.footer-distributed .footer-left p{
+.footer-left > div > a > img{	
+	width: 25px;
+	height: 25px;
+	margin: 5px;
+	float: left;
+}
+
+.footer-distributed .footer-right p{
 	color:  white;
 	font-size: 14px;
 	margin: 10px;
+	text-align: right;
 }
 
 .footer-distributed:hover {

@@ -7,7 +7,7 @@
 NOT FIXED-->TO DO--look if the issue with opening site and auto scroll messes up can be fixed
 
 -->TO DO-- map zoom on world small images
--->TO DO-- add git and linkedin buttons in footer
+
 
 -->TO DO--try and make scroll buttons scroll all the way to the right if they are at the first element
 
@@ -46,7 +46,7 @@ later-->TO DO-- write proper descriptions of the characters, if the site is gonn
 -->DONE--start working on world section
 -->DONE--sticky buttons on world section or rework the whole map shit
 
-
+-->DONE-- add git and linkedin buttons in footer
 
 ----------------------------------------------ADDITIONAL---------------------------------------------------
 ??background gradient changes while scrolling
